@@ -1,0 +1,15 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">Using ngclass</div>
+  <div class="panel-body">
+    <p [ngClass]="currentClass0">同時設置多個樣式0</p>
+    <p [ngClass]="currentClass1">同時設置多個樣式1</p>
+    <p [ngClass]="currentClass2">同時設置多個樣式2</p>
+
+    <div class="btn-group">
+        <button class="btn btn-success" (click)="setCurrentClass0()">Setting0</button>  
+        <button class="btn btn-success" (click)="setCurrentClass1()">Setting1</button>  
+        <button class="btn btn-success" (click)="setCurrentClass2()">Setting2</button>  
+    </div>
+  </div>
+</div>
+

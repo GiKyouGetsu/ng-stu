@@ -1,0 +1,11 @@
+<div class="panel panel-success">
+  <div class="panel-heading">USING NGSTYLE</div>
+  <div class="panel-body">
+    <div [ngStyle]="currentStyle1">用NgStyle批量修改内联样式 1！</div>
+    <div [ngStyle]="currentStyle2">用NgStyle批量修改内联样式 2！</div>
+  </div>
+  <div class="btn-group">
+      <button class="btn btn-success" (click)="setCurrentStyles1()">Setting1</button>
+      <button class="btn btn-success" (click)="setCurrentStyles2()">Setting2</button>
+  </div>
+</div>

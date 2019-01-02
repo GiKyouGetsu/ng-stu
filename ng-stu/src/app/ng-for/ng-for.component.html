@@ -1,0 +1,11 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">Using *ngFor</div>
+  <div class="panel-body">
+    <h3>Please select a race</h3>
+    <ul>
+      <li *ngFor="let race of races; index as i;">
+        {{i+1}}--{{race.name}}
+      </li>
+    </ul>
+  </div>
+</div>
