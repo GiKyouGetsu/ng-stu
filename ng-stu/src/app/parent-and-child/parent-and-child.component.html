@@ -1,6 +1,6 @@
-<div class="panel panel-primary">
-  <div class="panel-heading">Commucation between parent and child</div>
-  <div class="panel-body">
+<div class="card">
+  <div class="card-header">Commucation between parent and child</div>
+  <div class="card-body">
       <app-child #child (follow)= "doSomething()" panelTitle="A new title"></app-child>
       <button class="btn btn-success" (click)="child.childFun('from parent')">向子組件發信</button>
   </div>
