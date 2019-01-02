@@ -10,6 +10,7 @@ import { ChildTwoComponent } from './brother/child-two/child-two.component';
 import { LocalStorageComponent } from './local-storage/local-storage.component';
 import { Child1Component } from './local-storage/child1/child1.component';
 import { Child2Component } from './local-storage/child2/child2.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { Child2Component } from './local-storage/child2/child2.component';
     ChildTwoComponent,
     LocalStorageComponent,
     Child1Component,
-    Child2Component
+    Child2Component,
+    NavbarComponent
   ],
   imports: [
     BrowserModule
