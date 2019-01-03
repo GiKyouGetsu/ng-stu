@@ -1,5 +1,5 @@
-<div class="card">
-  <div class="card-header">Commucation between parent and child</div>
+<div class="card text-white ">
+  <div class="card-header bg-success">Commucation between parent and child</div>
   <div class="card-body">
       <app-child #child (follow)= "doSomething()" panelTitle="A new title"></app-child>
       <button class="btn btn-success" (click)="child.childFun('from parent')">向子組件發信</button>

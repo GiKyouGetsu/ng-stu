@@ -12,13 +12,14 @@ export class ChildComponent implements OnInit {
   public follow = new EventEmitter<string>();
 
   @Input()
-  set panelTitle(panelTitle:string){
-    this._panelTitle="【"+panelTitle+"】";
-  }
+  panelTitle: string;
+  // set panelTitle(panelTitle:string){
+  //   this._panelTitle="【"+panelTitle+"】";
+  // }
 
-  get panelTitle():string{
-    return this._panelTitle;
-  }
+  // get panelTitle():string{
+  //   return this._panelTitle;
+  // }
 
   constructor() { }
 
