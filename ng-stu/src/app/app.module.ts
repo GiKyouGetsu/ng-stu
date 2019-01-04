@@ -6,8 +6,7 @@ import { TesttFlyInComponent } from './testt-fly-in/testt-fly-in.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    TesttFlyInComponent
+    AppComponent
   ],
   imports: [
     BrowserModule
