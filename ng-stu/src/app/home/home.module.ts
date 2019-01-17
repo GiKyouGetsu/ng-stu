@@ -4,12 +4,16 @@ import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home.component';
 import { homeRoutes } from './home.routes';
 import { CommonModule } from '@angular/common';
+import { TextComponent } from './text/text.component';
+import { PictureComponent } from './picture/picture.component';
 
 
 
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
+    TextComponent,
+    PictureComponent
   
   ],
   imports: [
