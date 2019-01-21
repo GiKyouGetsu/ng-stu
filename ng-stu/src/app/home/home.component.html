@@ -9,11 +9,14 @@
         <a routerLink="text" class="list-group-item">只看文字</a>
       </div>
     </div>
+
+
     <div class="col-xs-9">
-      <!--主体内容是动态的-->
-      <router-outlet></router-outlet>
-    </div>
-    <div>
-      <app-order-inf></app-order-inf>
+      <div class="card">
+        <div class="card-header bg-primary"><span class="text-white">二级路由</span></div>
+        <div class="card-body">
+            <router-outlet></router-outlet>
+        </div>
+      </div>
     </div>
   </div>

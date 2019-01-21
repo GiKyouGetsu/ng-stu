@@ -3,15 +3,15 @@ import { Routes } from "@angular/router";
 export const appRoute:Routes =[
     {
         path: '',
-        redirectTo: 'home',
+        redirectTo: 'home/1',
         pathMatch: 'full'
     },
     {
-        path: 'home',
+        path: 'home/:page',
         loadChildren: './home/home.module#HomeModule'
     },
     {
-        path: 'link',
+        path: 'link/:page',
         loadChildren: './links/link.module#LinkModule'
     },
     {

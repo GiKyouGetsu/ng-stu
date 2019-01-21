@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router,
+    private activeRoute:ActivatedRoute) { }
 
   public arr: Array<any> = [
     {
@@ -24,6 +26,14 @@ export class HomeComponent implements OnInit {
     }
   ]
   ngOnInit() {
+
+    this.activeRoute.params.subscribe(par => {
+      console.log(par); 
+    })
+
+    this.activeRoute.queryParams.subscribe(res => {
+      console.log(res);
+    })
   }
 
 }
